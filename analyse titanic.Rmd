@@ -1,0 +1,33 @@
+---
+title: "TP TITANIC"
+author: "DURIMEL Y"
+date: "2025-11-27"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+#TP titanic
+
+```{r}
+library(carData)
+df<-TitanicSurvival
+summary(df)
+```
+
+
+
+
+```{r}
+plot(df$survived~df$sex, col=c("orange","lightgreen"))
+plot(df$survived~df$passengerClass)
+```
+
+
+
+```{r}
+plot(df$age~df$survived)
+```
